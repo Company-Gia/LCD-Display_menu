@@ -1,3 +1,15 @@
+/**
+ * @file caratteri_speciali_LCD.ino
+ * @author your name (you@domain.com)
+ * @brief this shit is a file to test the customized characters of the header file.
+ * It will be removed in the future.
+ * @version 0.1
+ * @date 2022-06-06
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ */
+
 #include "characters_code.h"
 #include <LiquidCrystal.h>
 LiquidCrystal lcd (7, 6, 5, 4 , 3, 2);
