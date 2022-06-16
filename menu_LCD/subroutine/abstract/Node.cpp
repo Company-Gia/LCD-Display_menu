@@ -9,10 +9,35 @@
 #include "Node.h"
 
 Node::Node(int listPos, Node* next, Node* prev) {
-    this->_listPos = listPos;
-    this->_next = next;
-    this->_prev = prev;
+    if (listPos >= -1 && next != nullptr && prev != nullptr) {
+        this->_listPos = listPos;
+        this->_next = next;
+        this->_prev = prev;
+    }
 }
+
+Node::Node(Node* next, Node* prev) {
+    if (next != nullptr && prev != nullptr) {
+        this->_listPos = -1;
+        this->_next = next;
+        this->_prev = prev;
+    }
+}
+
+Node::Node(Node* node) {
+    if (node != nullptr) {
+        this->_listPos = -1;
+        this->_next = node->getNext();
+        this->_prev = node->getPrev();
+    }
+}
+
+Node::Node() {
+    this->_listPos = -1;
+    this->_next = nullptr;
+    this->_prev = nullptr;
+}
+
 Node::~Node() {}
 
 Node* Node::getPrev() { return this->_prev; }
