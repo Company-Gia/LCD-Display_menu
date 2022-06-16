@@ -11,3 +11,5 @@
       - switch(key) { avanti, indietro, ok, undo }
 
   - Generalizzare e sfruttare l'ereditarietà
+
+  - Aggiungere messaggi di errori nei metodi delle classi (?)

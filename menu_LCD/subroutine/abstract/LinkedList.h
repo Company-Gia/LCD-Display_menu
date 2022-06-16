@@ -28,8 +28,10 @@ public:
     Node* getHead();
     void setHead(Node*);
 
-    void insertNode(); // Che parametri mettere?
+    void insertNode_bottom(Node*);
     void deleteNode();
+
+    int getListLength();
 };
 
 #endif
