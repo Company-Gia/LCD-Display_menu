@@ -9,30 +9,32 @@
 #ifndef Node_h
 #define Node_h
 
-class Node {
+class Node
+{
 private:
     int _listPos;
-    Node* _next;
-    Node* _prev;
+    Node *_next;
+    Node *_prev;
+
 public:
     /** @brief Construct a new Node object -> Inizializes all fields */
-    Node(int listPos, Node* next, Node* prev);
-    
+    Node(int listPos, Node *next, Node *prev);
+
     /** @brief Construct a new Node object -> Inizializes only pointers */
-    Node(Node* next, Node* prev);
+    Node(Node *next, Node *prev);
 
     /** @brief Construct a new Node object -> Initializes an "empty" node */
     Node();
-    
+
     /** @brief Destroy the Node object -> It's the class's destructor */
     ~Node();
 
-    Node* getPrev();
-    void setPrev(Node*);
-    
-    Node* getNext();
-    void setNext(Node*);
-    
+    Node *getPrev();
+    void setPrev(Node *);
+
+    Node *getNext();
+    void setNext(Node *);
+
     int getListPos();
     void setListPos(int);
 };
