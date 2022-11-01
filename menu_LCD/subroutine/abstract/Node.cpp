@@ -24,14 +24,6 @@ Node::Node(Node* next, Node* prev) {
     }
 }
 
-Node::Node(Node* node) {
-    if (node != nullptr) {
-        this->_listPos = -1;
-        this->_next = node->getNext();
-        this->_prev = node->getPrev();
-    }
-}
-
 Node::Node() {
     this->_listPos = -1;
     this->_next = nullptr;
